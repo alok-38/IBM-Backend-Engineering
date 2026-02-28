@@ -53,3 +53,22 @@ let isAuthenticated = false;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+// Practice task
+
+const role = "Employee";
+
+let hasDietaryServices = false;
+let dieticianInteraction = false;
+
+if (role === "Employee" || role === "Enrolled Member") {
+    hasDietaryServices = true;
+}
+
+if (role === "Enrolled Member") {
+    dieticianInteraction = true;
+}
+
+if (!hasDietaryServices) {
+    console.log("need to enroll or at least subscribe first to avail this facility.");
+}
